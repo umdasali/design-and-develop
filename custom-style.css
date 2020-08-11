@@ -305,3 +305,38 @@ ul > li > a {
         text-align: center;
     }
 }
+@media only screen and (max-width: 414px) {
+    form {
+        margin-left: 0;
+        width: 300px;
+
+    }
+
+    input {
+        width: 100%;
+
+    }
+
+    .title-input {
+        width: 100%;
+    }
+
+    textarea {
+        width:100%
+    }
+
+    .box {
+
+        top: 40%;
+        left: 5%;
+        padding: 10px;
+    }
+
+    .img-skill {
+        height: 45vh;
+    }
+
+    .sub-bout-box {
+        text-align: center;
+    }
+}
