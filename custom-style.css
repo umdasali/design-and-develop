@@ -1,0 +1,307 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+p {
+    color: #606060;
+}
+
+.header {
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-image: url("./images/hero-img.jpg");
+}
+
+.box {
+    position: absolute;
+    top: 40%;
+    left: 55%;
+    padding: 10px;
+}
+
+.btn-blue {
+    background-color: #10c9c3;
+    color: white;
+    padding: 10px 30px 10px 30px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: 0.4s ease;
+}
+
+.btn-blue:hover {
+    background-color: #dae4e6;
+    color: #10c9c3;
+    border: none;
+    border: 1px solid #10c9c3;
+    text-decoration: none;
+}
+
+
+.about {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.img-skill {
+    width: 100%;
+    height: 65vh;
+    background-position: center;
+    background-size: cover;
+    background-image: url(images/skill-img.jpg);
+}
+
+.bg-skill {
+    background-color: #f6f7f9;
+    height: 65vh;
+}
+
+.skill-box {
+    margin: 10%;
+    margin-top: 20%;
+}
+
+.progress-text {
+    padding-left: 10px;
+    color: black;
+    padding-top: 10px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.sub-bout {
+    background-color: #10c9c3;
+    padding: 40px;
+}
+
+.sub-bout-box {
+    display: block;
+    padding-top: 40px;
+    color: white;
+
+}
+
+.sub-bout-box > p {
+    color: white;
+}
+
+/*///////////////////////////////////////////////////
+                       progress
+/////////////////////////////////////////////////*/
+.progress-animte1 {
+    width: 75%;
+    animation: animate1 1s linear;
+}
+
+@keyframes animate1 {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 75%;
+    }
+}
+
+.progress-animte2 {
+    width: 90%;
+    animation: animate2 1s linear;
+}
+
+@keyframes animate2 {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 90%;
+    }
+}
+
+.progress-animte3 {
+    width: 65%;
+    animation: animate3 1s linear;
+}
+
+@keyframes animate3 {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 65%;
+    }
+}
+
+
+/*///////////////////////////////////////////////////
+                       gallery
+/////////////////////////////////////////////////*/
+.gallery {
+    display: none;
+    background-color: white;
+    box-shadow: 5px 5px 30px #da3928;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+}
+
+.img-wrapper {
+    overflow: hidden;
+}
+
+.img-wrapper img {
+    transition: transform .5s ease;
+}
+
+.img-wrapper img:hover {
+    transform: scale(1.5);
+}
+
+.service {
+    margin-top: 50px;
+    text-align: center;
+    background-color: #f5f5f5;
+    padding: 50px;
+}
+
+/*///////////////////////////////////////////////////
+                    testimonial
+/////////////////////////////////////////////////*/
+
+.text-style {
+    height: 100%;
+    padding: 100px;
+    background-color: #10c9c3;
+    text-align: center;
+    color: white;
+}
+
+.para-test {
+    color: white;
+    width: 100%;
+
+}
+
+.text-style .owl-theme .owl-controls .owl-page span {
+    background-color: white;
+}
+
+/*///////////////////////////////////////////////////
+                    form
+/////////////////////////////////////////////////*/
+form {
+    float: left;
+    width: 500px;
+    margin-left: 30%;
+}
+
+.input-box {
+    width: 49%;
+    border: none;
+    height: 35px;
+    margin-bottom: 10px;
+
+}
+
+.title-input {
+    width: 98%;
+    border: none;
+    height: 35px;
+    margin-bottom: 10px;
+}
+
+textarea {
+    width: 490px;
+    border: none;
+}
+
+.footer-bg {
+    background-color: #000;
+    color: #fff;
+    padding: 30px;
+}
+
+.footer-bg > p {
+    color: white;
+}
+
+ul > li {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+ul > li > a {
+    color: white;
+}
+
+.navbar-ali {
+    color: black;
+
+}
+
+
+/*///////////////////////////////////////////////////
+                    Media Query
+/////////////////////////////////////////////////*/
+@media only screen and (max-width: 786px) {
+    .box {
+        position: absolute;
+        top: 40%;
+        left: 20%;
+        padding: 10px;
+    }
+
+    form {
+        margin-left: 10px;
+    }
+
+    .text-style {
+        height: 100%;
+        padding: 50px;
+    }
+}
+
+/*=====================for small device============================*/
+@media only screen and (max-width: 375px) {
+    form {
+        margin-left: 0;
+        width: 300px;
+
+    }
+
+    input {
+        width: 100%;
+
+    }
+
+    .title-input {
+        width: 100%;
+    }
+
+    textarea {
+        width: 100%
+    }
+
+    .box {
+
+        top: 40%;
+        left: 5%;
+        padding: 10px;
+    }
+
+    .img-skill {
+        height: 45vh;
+    }
+
+    .sub-bout-box {
+        text-align: center;
+    }
+}
